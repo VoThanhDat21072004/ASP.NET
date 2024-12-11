@@ -156,3 +156,7 @@ D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.csproj
 D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.csproj.CopyComplete
 D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.dll
 D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.pdb
+D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\bin\EntityFramework.dll
+D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\bin\EntityFramework.SqlServer.dll
+D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\bin\EntityFramework.xml
+D:\LapTrinhASP.NET\ChuyenDeASPNET\ChuyenDeASPNET\bin\EntityFramework.SqlServer.xml

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE HTML>
+﻿@model List<ChuyenDeASPNET.Context.Product>
+
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -477,116 +479,23 @@
             <header class="section-heading heading-line">
                 <h4 class="title-section text-uppercase">Recommended items</h4>
             </header>
-
             <div class="row row-sm">
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/1.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Just another product name</a>
-                            <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/2.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Some item name here</a>
-                            <div class="price mt-1">$280.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/3.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Great product name here</a>
-                            <div class="price mt-1">$56.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/4.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Just another product name</a>
-                            <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/5.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Just another product name</a>
-                            <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/6.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Some item name here</a>
-                            <div class="price mt-1">$280.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/7.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Great product name here</a>
-                            <div class="price mt-1">$56.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/9.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Just another product name</a>
-                            <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/4.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Just another product name</a>
-                            <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/5.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Just another product name</a>
-                            <div class="price mt-1">$179.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/6.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Some item name here</a>
-                            <div class="price mt-1">$280.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
-                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
-                    <div href="#" class="card card-sm card-product-grid">
-                        <a href="@Url.Action("ProductDetail", "Product")" class="img-wrap"> <img src="~/Content/images/items/7.jpg"> </a>
-                        <figcaption class="info-wrap">
-                            <a href="@Url.Action("ProductDetail", "Product")" class="title">Great product name here</a>
-                            <div class="price mt-1">$56.00</div> <!-- price-wrap.// -->
-                        </figcaption>
-                    </div>
-                </div> <!-- col.// -->
+                @foreach (var product in Model)
+                {
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                        <div class="card card-sm card-product-grid">
+                            <a href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })" class="img-wrap">
+                                <img src="~/Content/images/items/@product.ProductImage" alt="@product.ProductName">
+                            </a>
+                            <figcaption class="info-wrap">
+                                <a href="@Url.Action("ProductDetail", "Product", new { id = product.ProductID })" class="title">@product.ProductName</a>
+                                <div class="price mt-1">
+                                    @product.Price.ToString("C0", System.Globalization.CultureInfo.CreateSpecificCulture("vi-VN"))
+                                </div> <!-- price-wrap.// -->
+                            </figcaption>
+                        </div>
+                    </div> <!-- col.// -->
+                }
             </div> <!-- row.// -->
         </section>
         <!-- =============== SECTION ITEMS .//END =============== -->
