@@ -167,6 +167,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\HomeModel.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2297,6 +2299,22 @@
     <Content Include="Context\dbModel.edmx.diagram">
       <DependentUpon>dbModel.edmx</DependentUpon>
     </Content>
+    <Content Include="Content\images\items\16.jpg" />
+    <Content Include="Content\images\items\17.jpg" />
+    <Content Include="Content\images\items\18.jpg" />
+    <Content Include="Content\images\items\19.jpg" />
+    <Content Include="Content\images\items\20.jpg" />
+    <Content Include="Content\images\items\21.jpg" />
+    <Content Include="Content\images\items\22.jpg" />
+    <Content Include="Content\images\items\23.jpg" />
+    <Content Include="Content\images\items\24.jpg" />
+    <Content Include="Content\images\items\25.jpg" />
+    <Content Include="Content\images\items\26.jpg" />
+    <Content Include="Content\images\items\27.jpg" />
+    <Content Include="Content\images\items\28.jpg" />
+    <Content Include="Content\images\items\29.jpg" />
+    <Content Include="Content\images\items\30.jpg" />
+    <Content Include="Content\images\items\31.jpg" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2340,7 +2358,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />

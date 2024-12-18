@@ -25,6 +25,7 @@
     <Property Name="UpdateAt" Type="DateTime" Precision="3" />
     <Property Name="UpdateBy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Products" Relationship="Self.FK_Products_Categories" FromRole="Categories" ToRole="Product" />
+    <Property Name="Image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Product">
     <Key>

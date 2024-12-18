@@ -23,6 +23,7 @@
     <Property Name="CreateBy" Type="nvarchar" MaxLength="100" />
     <Property Name="UpdateAt" Type="datetime" />
     <Property Name="UpdateBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="Image" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <EntityType Name="Product">
     <Key>

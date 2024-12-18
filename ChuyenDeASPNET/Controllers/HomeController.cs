@@ -1,4 +1,5 @@
 ﻿using ChuyenDeASPNET.Context;
+using ChuyenDeASPNET.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,16 @@ namespace ChuyenDeASPNET.Controllers
     public class HomeController : Controller
     {
         ASPNETEntities objASPNETEntities = new ASPNETEntities();
+
         public ActionResult Index()
         {
-            var lstProduct = objASPNETEntities.Products.ToList();
-            return View(lstProduct);
+            HomeModel objHomeModel = new HomeModel();
+            // Lấy danh sách sản phẩm và danh mục từ cơ sở dữ liệu
+            objHomeModel.ListProduct = objASPNETEntities.Products.ToList();
+            objHomeModel.ListCategory = objASPNETEntities.Categories.ToList();
+
+            return View(objHomeModel);
+
         }
     }
 }
