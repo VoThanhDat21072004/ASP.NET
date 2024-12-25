@@ -45,19 +45,13 @@
   </EntityType>
   <EntityType Name="Users">
     <Key>
-      <PropertyRef Name="UserID" />
+      <PropertyRef Name="idUser" />
     </Key>
-    <Property Name="UserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
-    <Property Name="Email" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="Password" Type="nvarchar" MaxLength="255" Nullable="false" />
-    <Property Name="FullName" Type="nvarchar" MaxLength="255" />
-    <Property Name="Role" Type="nvarchar" MaxLength="50" />
-    <Property Name="CreateAt" Type="datetime" />
-    <Property Name="CreateBy" Type="nvarchar" MaxLength="100" />
-    <Property Name="UpdateAt" Type="datetime" />
-    <Property Name="UpdateBy" Type="nvarchar" MaxLength="100" />
-    <Property Name="Status" Type="bit" />
+    <Property Name="idUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
   </EntityType>
   <Association Name="FK_Products_Brands">
     <End Role="Brand" Type="Self.Brand" Multiplicity="1" />

@@ -4,6 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <script src="~/Scripts/js/jquery-2.0.0.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" content="max-age=604800" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Website title - bootstrap html template</title>
+
+    <link href="~/Content/~/Content/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <!-- Bootstrap4 files-->
+    <script src="~/Scripts/js/bootstrap.bundle.min.js"></script>
+
+
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Font awesome 5 -->
+    <link href="~/Content/fonts/fontawesome/css/all.min.css" rel="stylesheet" />
+
+    <!-- custom style -->
+    <link href="~/Content/css/ui.css" rel="stylesheet" />
+
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+
+    <!-- custom javascript -->
+    <script src="~/Scripts/js/script.js"></script>
 </head>
 
 <body>
@@ -64,7 +90,7 @@
                                 </a>
                             </div>
                             <div class="widget-header">
-                                <a href="@Url.Action("Cart", "Shopping")" class="widget-view">
+                                <a href="@Url.Action("Index", "Cart")" class="widget-view">
                                     <div class="icon-area">
                                         <i class="fa fa-shopping-cart"></i>
                                     </div>
@@ -185,8 +211,8 @@
                     <aside class="col-md col-6">
                         <h6 class="title">Account</h6>
                         <ul class="list-unstyled">
-                            <li> <a href="@Url.Action("Login", "User")"> User Login </a></li>
-                            <li> <a href="@Url.Action("Register", "User")"> User register </a></li>
+                            <li> <a href="@Url.Action("Login", "Home")"> User Login </a></li>
+                            <li> <a href="@Url.Action("Register", "Home")"> User register </a></li>
                             <li> <a href="#"> Account Setting </a></li>
                             <li> <a href="#"> My Orders </a></li>
                         </ul>
