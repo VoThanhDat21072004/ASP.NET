@@ -8,7 +8,7 @@
     <!-- ========================= SECTION PAGETOP ========================= -->
     <section class="section-pagetop bg-gray">
         <div class="container">
-            <h2 class="title-page">My account</h2>
+            <h2 class="title-page">Tài khoản của tôi</h2>
         </div> <!-- container //  -->
     </section>
     <!-- ========================= SECTION PAGETOP END// ========================= -->
@@ -19,13 +19,13 @@
             <div class="row">
                 <aside class="col-md-3">
                     <nav class="list-group">
-                        <a class="list-group-item active" href="@Url.Action("Main", "Profile")"> Account overview  </a>
-                        <a class="list-group-item" href="@Url.Action("Address", "Profile")"> My Address </a>
-                        <a class="list-group-item" href="@Url.Action("Orders", "Profile")"> My Orders </a>
-                        <a class="list-group-item" href="@Url.Action("Wishlist", "Profile")"> My wishlist </a>
-                        <a class="list-group-item" href="@Url.Action("Seller", "Profile")"> My Selling Items </a>
-                        <a class="list-group-item" href="@Url.Action("Setting", "Profile")"> Settings </a>
-                        <a class="list-group-item" href="@Url.Action("Login", "User")"> Log out </a>
+                        <a class="list-group-item active" href="@Url.Action("Main", "Profile")"> Tổng quan tài khoản </a>
+                        <a class="list-group-item" href="@Url.Action("Address", "Profile")"> Địa chỉ của tôi </a>
+                        <a class="list-group-item" href="@Url.Action("Orders", "Profile")"> Đơn hàng của tôi </a>
+                        <a class="list-group-item" href="@Url.Action("Wishlist", "Profile")"> Danh sách yêu thích </a>
+                        <a class="list-group-item" href="@Url.Action("Seller", "Profile")"> Sản phẩm bán của tôi </a>
+                        <a class="list-group-item" href="@Url.Action("Setting", "Profile")"> Cài đặt </a>
+                        <a class="list-group-item" href="@Url.Action("Login", "Home")"> Đăng xuất </a>
                     </nav>
                 </aside> <!-- col.// -->
                 <main class="col-md-9">
@@ -38,55 +38,52 @@
                                     <img class="rounded-circle img-sm border" src="~/Content/images/avatars/avatar3.jpg">
                                 </div>
                                 <div class="text">
-                                    <strong> Mr. Jackson Someone </strong> <br>
+                                    <strong> Ông Jackson Someone </strong> <br>
                                     <p class="mb-2"> myloginname@gmail.com  </p>
-                                    <a href="#" class="btn btn-light btn-sm">Edit</a>
+                                    <a href="#" class="btn btn-light btn-sm">Chỉnh sửa</a>
                                 </div>
                             </figure>
                             <hr>
                             <p>
-                                <i class="fa fa-map-marker text-muted"></i> &nbsp; My address:
+                                <i class="fa fa-map-marker text-muted"></i> &nbsp; Địa chỉ của tôi:
                                 <br>
-                                Tashkent city, Street name, Building 123, House 321 &nbsp
-                                <a href="#" class="btn-link"> Edit</a>
+                                Thành phố Tashkent, Tên đường, Tòa nhà 123, Nhà 321 &nbsp
+                                <a href="#" class="btn-link"> Chỉnh sửa</a>
                             </p>
-
-
 
                             <article class="card-group card-stat">
                                 <figure class="card bg">
                                     <div class="p-3">
                                         <h4 class="title">38</h4>
-                                        <span>Orders</span>
+                                        <span>Đơn hàng</span>
                                     </div>
                                 </figure>
                                 <figure class="card bg">
                                     <div class="p-3">
                                         <h4 class="title">5</h4>
-                                        <span>Wishlists</span>
+                                        <span>Danh sách yêu thích</span>
                                     </div>
                                 </figure>
                                 <figure class="card bg">
                                     <div class="p-3">
                                         <h4 class="title">12</h4>
-                                        <span>Awaiting delivery</span>
+                                        <span>Đang chờ giao hàng</span>
                                     </div>
                                 </figure>
                                 <figure class="card bg">
                                     <div class="p-3">
                                         <h4 class="title">50</h4>
-                                        <span>Delivered items</span>
+                                        <span>Sản phẩm đã giao</span>
                                     </div>
                                 </figure>
                             </article>
-
 
                         </div> <!-- card-body .// -->
                     </article> <!-- card.// -->
 
                     <article class="card  mb-3">
                         <div class="card-body">
-                            <h5 class="card-title mb-4">Recent orders </h5>
+                            <h5 class="card-title mb-4">Đơn hàng gần đây </h5>
 
                             <div class="row">
                                 <div class="col-md-6">
@@ -94,8 +91,8 @@
                                         <div class="aside"><img src="~/Content/images/items/1.jpg" class="border img-sm"></div>
                                         <figcaption class="info">
                                             <time class="text-muted"><i class="fa fa-calendar-alt"></i> 12.09.2019</time>
-                                            <p>Great book name goes here </p>
-                                            <span class="text-success">Order confirmed </span>
+                                            <p>Tên sách tuyệt vời ở đây</p>
+                                            <span class="text-success">Đơn hàng đã xác nhận </span>
                                         </figcaption>
                                     </figure>
                                 </div> <!-- col.// -->
@@ -104,8 +101,8 @@
                                         <div class="aside"><img src="~/Content/images/items/2.jpg" class="border img-sm"></div>
                                         <figcaption class="info">
                                             <time class="text-muted"><i class="fa fa-calendar-alt"></i> 12.09.2019</time>
-                                            <p>How to be rich</p>
-                                            <span class="text-success">Departured</span>
+                                            <p>Cách làm giàu</p>
+                                            <span class="text-success">Đã xuất phát</span>
                                         </figcaption>
                                     </figure>
                                 </div> <!-- col.// -->
@@ -114,14 +111,14 @@
                                         <div class="aside"><img src="~/Content/images/items/3.jpg" class="border img-sm"></div>
                                         <figcaption class="info">
                                             <time class="text-muted"><i class="fa fa-calendar-alt"></i> 12.09.2019</time>
-                                            <p>Harry Potter book </p>
-                                            <span class="text-success">Shipped  </span>
+                                            <p>Sách Harry Potter </p>
+                                            <span class="text-success">Đã giao </span>
                                         </figcaption>
                                     </figure>
                                 </div> <!-- col.// -->
                             </div> <!-- row.// -->
 
-                            <a href="#" class="btn btn-outline-primary btn-block"> See all orders <i class="fa fa-chevron-down"></i>  </a>
+                            <a href="#" class="btn btn-outline-primary btn-block"> Xem tất cả đơn hàng <i class="fa fa-chevron-down"></i>  </a>
                         </div> <!-- card-body .// -->
                     </article> <!-- card.// -->
 
@@ -133,4 +130,4 @@
     <!-- ========================= SECTION CONTENT END// ========================= -->
 
 </body>
-</html>
+
