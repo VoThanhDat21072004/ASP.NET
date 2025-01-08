@@ -42,19 +42,14 @@
                             <img class="logo" src="~/Content/images/logo.png">
                         </a> <!-- brand-wrap.// -->
                     </div>
-                    <div class="col-xl-6 col-lg-5 col-md-6">
-                        <form action="#" class="search-header">
-                            <div class="input-group w-100">
-                                <!-- Chỉnh sửa lại layout của dropdown và input tìm kiếm cho hợp lý hơn -->
-                                <select class="custom-select" name="category_name">
-                                    <option value="">Tất cả các loại</option>
-                                    <option value="codex">Special</option>
-                                    <option value="comments">Only best</option>
-                                    <option value="content">Latest</option>
-                                </select>
-                                <input type="text" class="form-control" placeholder="Bạn muốn tìm gì?" aria-label="Search">
 
-                                <!-- Nút tìm kiếm được căn giữa và có khoảng cách hợp lý -->
+                    <div class="col-xl-6 col-lg-5 col-md-6">
+                        <form action="@Url.Action("AllProduct", "Product")" method="get" class="search-header">
+                            <div class="input-group w-100">
+                                <!-- Ô input tìm kiếm -->
+                                <input type="text" class="form-control" placeholder="Bạn muốn tìm gì?" name="SearchString" value="@ViewBag.CurentFIlter">
+
+                                <!-- Nút tìm kiếm -->
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="submit">
                                         <i class="fa fa-search"></i> Tìm kiếm
@@ -62,7 +57,8 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
+                        <!-- search-wrap .end// -->
+                    </div> <!-- col.// -->
 
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="widgets-wrap float-md-right">

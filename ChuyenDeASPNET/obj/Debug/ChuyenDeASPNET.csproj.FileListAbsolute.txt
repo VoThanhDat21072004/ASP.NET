@@ -243,3 +243,7 @@ C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.csproj.Cor
 C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.csproj.CopyComplete
 C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.dll
 C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\obj\Debug\ChuyenDeASPNET.pdb
+C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\bin\PagedList.dll
+C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\bin\PagedList.Mvc.dll
+C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\bin\PagedList.xml
+C:\Users\ASUS\Desktop\ASP.NET\ChuyenDeASPNET\bin\PagedList.Mvc.xml
