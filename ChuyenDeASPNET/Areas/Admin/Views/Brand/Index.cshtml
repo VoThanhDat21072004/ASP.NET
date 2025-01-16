@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ChuyenDeASPNET.Context.Brand>
+
+@{
+    ViewBag.Title = "Danh sách thương hiệu";
+}
+
+<h2>Danh sách thương hiệu</h2>
+
+<p>
+    @Html.ActionLink("Thêm thương hiệu mới", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BrandName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateBy)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdateAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdateBy)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BrandName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @(item.CreateAt.HasValue ? item.CreateAt.Value.ToString("dd/MM/yyyy") : "N/A")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreateBy)
+                </td>
+                <td>
+                    @(item.UpdateAt.HasValue ? item.UpdateAt.Value.ToString("dd/MM/yyyy") : "N/A")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UpdateBy)
+                </td>
+                <td>
+                    @Html.ActionLink("Sửa", "Edit", new { id = item.BrandID }, new { @class = "btn btn-warning btn-sm" }) |
+                    @Html.ActionLink("Chi tiết", "Details", new { id = item.BrandID }, new { @class = "btn btn-info btn-sm" }) |
+                    @using (Html.BeginForm("Delete", "Brand", new { id = item.BrandID }, FormMethod.Post, new { onsubmit = "return confirm('Bạn có chắc chắn muốn xóa thương hiệu này?')" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <input type="submit" value="Xóa" class="btn btn-danger btn-sm" />
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

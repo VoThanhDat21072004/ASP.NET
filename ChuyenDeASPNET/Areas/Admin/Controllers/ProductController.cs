@@ -1,4 +1,6 @@
 ﻿using ChuyenDeASPNET.Context;
+using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -9,14 +11,12 @@ namespace ChuyenDeASPNET.Areas.Admin.Controllers
     public class ProductController : Controller
     {
         ASPNETEntities1 objASPNETEntities = new ASPNETEntities1();
-
         // GET: Admin/Product
         public ActionResult Index()
         {
             var lstProduct = objASPNETEntities.Products.ToList();
             return View(lstProduct);
         }
-
         [HttpGet]
         public ActionResult Create()
         {
@@ -51,7 +51,6 @@ namespace ChuyenDeASPNET.Areas.Admin.Controllers
 
             return View(product);
         }
-
         // GET: Admin/Product/Edit/5
         [HttpGet]
         public ActionResult Edit(int? id)
@@ -114,5 +113,6 @@ namespace ChuyenDeASPNET.Areas.Admin.Controllers
 
             return View(product);
         }
+
     }
 }

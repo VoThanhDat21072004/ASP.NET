@@ -1,0 +1,73 @@
+﻿@model ChuyenDeASPNET.Context.Brand
+
+@{
+    ViewBag.Title = "Details";
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Brand</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BrandName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.BrandName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CreateAt)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CreateAt)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CreateBy)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CreateBy)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.UpdateAt)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UpdateAt)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.UpdateBy)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.UpdateBy)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.BrandID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
